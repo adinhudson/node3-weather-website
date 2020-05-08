@@ -16,6 +16,6 @@
     "hbs": "^4.0.1"
   },
   "devDependencies": {
-    "nodemon": "^1.2.0"
+    "nodemon": "^2.0.3"
   }
 }
