@@ -7,7 +7,7 @@ const forecast = (lat, lon, callback) => {
         responseType: 'json'
     })
         .then(({data}) => {
-            callback(undefined, 'Temprature now: ' +  data.current.temp)
+            callback(undefined, 'Temprature now is ' +  data.current.temp+ ' degree celcius, but it feels like '+data.current.feels_like + 'degree celcius, wind speed is '+ data.current.wind_speed + ' KMH. And the humidity of the air is '+data.current.humidity+'%' )
         })
         .catch((error) => {
             if (error) {
